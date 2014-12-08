@@ -1,0 +1,259 @@
+table th {
+    font-weight: bold;
+}
+
+table td, table th {
+    padding: 7px 10px;
+    text-align: left;
+}
+
+@media only screen and (max-width: 767px) {
+    table.responsive, #fixed-scrolling-header {
+        margin-bottom: 0;
+    }
+
+    .pinned {
+        position: absolute;
+        left: 0;
+        top: 0;
+        /*background: #fff;*/
+        width: 35%;
+        overflow: hidden;
+        /*overflow-x: scroll;*/
+        /*border-right: 1px solid #ccc;
+        border-left: 1px solid #ccc;*/
+    }
+
+        .pinned table {
+            border-right: none;
+            border-left: none;
+            width: 100%;
+        }
+
+            .pinned table th, .pinned table td {
+                /*white-space: nowrap;*/
+                max-width: 110px;
+                /*display: block;*/
+            }
+
+        .pinned td:last-child {
+            border-bottom: 0;
+        }
+
+    /*sections*/
+
+    .sections {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        overflow: hidden;
+        overflow-x: scroll;
+    }
+
+        .sections table {
+            border-right: none;
+            border-left: none;
+            width: 100%;
+        }
+
+            .sections table th, .sections table td {
+                white-space: nowrap;
+            }
+
+        .sections td:last-child {
+            border-bottom: 0;
+        }
+
+
+
+
+
+        td{
+            border-bottom:1px solid #FFF;
+        }
+
+
+    div.table-wrapper {
+        position: relative;
+        margin-bottom: 20px;
+        overflow: hidden;
+        border-right: 1px solid #ccc;
+    }
+
+        div.table-wrapper div.scrollable table, #fixed-scrolling-header {
+            margin-left: 35%;
+        }
+
+        div.table-wrapper div.scrollable {
+            overflow: scroll;
+            overflow-y: hidden;
+        }
+    table tr td, table th {
+        max-width: 250px;
+        width: 200px;
+        font-size:12px;
+        /*word-wrap: break-word;*/
+    }
+    table.tr{
+        padding-bottom:1px;
+    }
+    table.responsive td, table.responsive th {
+        position: relative;
+        /*white-space: nowrap;*/
+        min-width:160px;
+        min-height:40px;
+        overflow: hidden;
+    }
+    table th{
+        /*text-transform:uppercase;*/
+        
+    }
+
+        table.responsive th:first-child, table.responsive td:first-child, table.responsive td:first-child, table.responsive.pinned td, #fixed-scrolling-header th:first-child {
+            display: none;
+        }
+
+    table.responsive th, table.non-responsive th {
+        background-color: #929292;
+        color: #FFF;
+    }
+    table.non-responsive td {
+        vertical-align:top;
+    }
+    table.non-responsive td.sub-header {
+        font-weight:bold;
+        vertical-align:middle;
+    }
+    
+   .non-responsive ul
+{
+    list-style: none;
+}
+     .non-responsive ul li, .content ol li
+    {
+        padding-left: 1.15rem;
+        position: relative;
+        margin-bottom: 1.2rem;
+    }
+
+    .non-responsive ol li
+    {
+        padding-left: 0rem;
+        margin-left: 0;
+    }
+.non-responsive ul li:before
+{
+    content: "\203A";
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+    table.responsive tr, table.non-responsive tr{
+        background-color: #f0f0f0;
+    }
+
+    .pinned table th {
+        background-color: #7b7b7b;
+        color: #FFF;
+    }
+
+    .pinned table tr {
+        background-color: #dddddd;
+    }
+
+    tr.sub-header-row {
+        border: 0px;
+    }
+
+    tr.sub-header-row {
+        border: 0;
+        background: #c8c8c8 !important;
+        height: 40px;
+        white-space: nowrap;
+        
+        text-transform:uppercase;
+    }
+    .sections tr.sub-header{
+        display:none;
+    }
+    table {
+        border-spacing: 0px;
+    }
+
+     .sticky-header {
+        position: fixed;
+        top: 0px;
+        left:0px;
+        display: none;
+        /*overflow-y:scroll;
+        overflow:hidden !important;*/
+    }
+   .pinned.sticky-header{
+       overflow-x:hidden;
+   }
+
+        #fixed-scrolling-header th {
+            /*margin-left: 35%;*/
+            background-color: #929292;
+            color: #FFF;
+            position: relative;
+            white-space: nowrap;
+            overflow: hidden;
+        }
+
+        #fixed-scrolling-header table th {
+            background-color: #7b7b7b;
+            color: #FFF;
+        }
+
+   
+
+        #fixed-header th {
+            /*margin-left: 35%;*/
+            background-color: #7b7b7b;
+            color: #FFF;
+            position: relative;
+            white-space: nowrap;
+            overflow: hidden;
+        }
+
+        #fixed-header table th {
+            background-color: #7b7b7b;
+            color: #FFF;
+        }
+
+  
+}
+
+.header div {
+    display: table-cell;
+}
+
+.header .row {
+    overflow: scroll;
+}
+
+.table {
+    display: table;
+    width: 100%;
+}
+
+.row {
+    display: table-row;
+    width: 100%;
+}
+
+.cell {
+    display: table-cell;
+    width: 25%;
+}
+
+.fullwidth-cell {
+    /* OPTION 1 */
+    display: block; /* or without display definition */
+    /* OPTION 2 */
+    width: 100%;
+}
+
