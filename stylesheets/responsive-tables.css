@@ -7,7 +7,7 @@ table td, table th {
     text-align: left;
 }
 
-@media only screen and (max-width: 767px) {
+
     table.responsive, #fixed-scrolling-header {
         margin-bottom: 0;
     }
@@ -225,7 +225,7 @@ table td, table th {
         }
 
   
-}
+
 
 .header div {
     display: table-cell;
